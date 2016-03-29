@@ -65,7 +65,7 @@ def main():
         #write to log file
         writeToLog(logWriter)
         
-    #constant.log['isSatisfy'] = solutionProvider.askSatisfaction()    
+    constant.log['isSatisfy'] = solutionProvider.askSatisfaction()    
     #Write q command log and user satisfaction
     writeToLog(logWriter)
     
