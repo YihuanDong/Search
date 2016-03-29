@@ -111,6 +111,8 @@ def askIdentification():
         constant.logFilePath = str(groupNumber) + '-A-' + constant.tool + '-' + constant.logFilePath
     else:
         constant.logFilePath = str(groupNumber) + '-B-' + constant.tool + '-' + constant.logFilePath
+        
+    constant.logFilePath = '../' + constant.logFilePath
     return
 
 # display exit message
