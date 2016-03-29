@@ -65,7 +65,7 @@ def main():
         #write to log file
         writeToLog(logWriter)
         
-    constant.log['isSatisfy'] = solutionProvider.askSatisfaction()    
+    constant.log['isSatisfy'] = askSatisfaction()    
     #Write q command log and user satisfaction
     writeToLog(logWriter)
     
@@ -112,6 +112,14 @@ def askIdentification():
     else:
         constant.logFilePath = str(groupNumber) + '-B-' + constant.tool + '-' + constant.logFilePath
     return
+
+# ask for user satisfaction
+def askSatisfaction():
+    reply = raw_input('Are you satisfied with the solutions? (yes/no): ')
+    while not (reply == 'yes' or reply == 'no'):
+        print('Sorry, your response is not valid. Please try again.')
+        reply = raw_input('Are you satisfied with the solution? (yes/no): ')
+    return reply
 
 # display exit message
 def exitMessage():
