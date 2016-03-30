@@ -91,7 +91,7 @@ def askGroupNumber():
         try:
             stringNumber = raw_input("What is the group number assigned to your team?: ")
             groupNumber = int(stringNumber)
-            if (groupNumber <= 40 and groupNumber >= 1):
+            if (groupNumber <= 100 and groupNumber >= 1):
                 break
             else:
                 print("Your input is not valid. Please try again.")
